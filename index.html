@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="icon" type="image/png" href="image/fidel_Castro.png">
+    <title>Fidel Clicker</title>
+</head>
+
+<header>
+    <a href="index.html"><img src="image/fidel_Castro.png" alt="fidel_Castro" id="img_fidel"></a>
+    <H1 id="title_fidel">Fidel Clicker</H1>
+    <div id="days_fidel">
+        <h1>Day:</h1>
+        <h1 id="days">0</h1>
+    </div>
+</header>
+
+<body id="body">
+    <div id="topligne">
+        <div id="left_top_part">
+            <section id="button_cigar_sec">
+                <button onclick="whenClick()" id="button_cigar"><img src="image/cigare.png" alt="cigare" width="150px" height="150px"></button>
+                <script>autoClick()</script>
+            </section>
+        </div>
+
+        <div id="boutique">
+            <table id="tableau" border="1">
+            </table>
+            <script>showBoutique()</script>
+        </div>
+    </div>
+
+    <div id="bottomligne">
+
+        <div id="info">
+            <section class="marginText">
+                <h1>Cigares</h1>
+                <h2 id="golds">0</h2>
+            </section>
+
+            <section>
+                <h1>Multiplicateur</h1>
+                <h2 id="multiplicator">1</h2>
+            </section>
+
+            <section>
+                <h1>Fabriquants</h1>
+                <h2 id="minionquantity">0</h2>
+            </section>
+
+            <section id="gps" class="marginText">
+                <h1>CPS</h1>
+                <h2 id="displaygps"></h2>
+                <script>displayGPS()</script>
+            </section>
+        
+            <section>
+                <h1>Informations:</h1>
+                <ul>
+                    <li>Attention le prix de tes Fabriques augmente de 1,15 a chaque Achat</li>
+                    <li>A chaque 50 Fabriques acheter ton click est multiplier par 2</li> 
+                    <li>Quand tu achetes 25,50,100,250 et 1000 Fabriques leur CPS est multiplier par 2!!</li>
+                    <li>CPS = Cigares par seconde</li>
+                    <li>L'étape 2 debute au jour 15. Lors de l'etape2 tu devras te defendre des attaques de la CIA. Tu ganeras si tu arrives au jour 30.</li>
+                    <li>Attention tu ne doit pas cumuler plus de 3 attaque en meme temps!!</li>
+                    <li>Le Parin coute 150K mais x6 le multiplicateur et Che Guevara coute 50k mais x2 les cigares</li>
+                </ul>
+            </section>
+
+            <section id="setting_button">
+                <button onclick="save()" class="button">Save</button>
+                <button onclick="load()" class="button">Load</button>
+                <button onclick="reset()" class="button">Reset</button>
+            </section>
+
+        </div>
+
+        <div>
+            
+        </div>
+
+        <div id="fabriques">
+            <section id="fabrique">
+                <script>displayOnMap()</script>
+                <input type="button" class="button" id="bonus1" onclick="buyCheGuevara()" value="Che Guevara">
+                <input type="button" class="button" id="bonus2" onclick="buyLeParin()" value="Le Parin">
+            </section>
+
+            <section id="event">
+                <button class="button" id="button_step2"">Etape 2</button>
+            </section>
+        </div>
+    </div> 
+</body>
+
+<footer>
+    <h1>COSTE Charles</h1>
+    <h1>GIRAULT Aymeric</h1>
+</footer>
+
+</html>

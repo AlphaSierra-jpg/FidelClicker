@@ -1,0 +1,10 @@
+#end_img {
+    width: 250px;
+    height: 300px;
+    background: none;
+    border: none;
+    cursor: url("image/cursor.png"), pointer!important;
+}
+#bodyEnd {
+    color: white;
+}
