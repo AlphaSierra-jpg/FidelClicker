@@ -20,14 +20,14 @@ const newciaattack = setInterval(function () { newCiaAttack() }, 60000); //Compt
 
 //Tableau des minions
 var minions = [
-    { id: 0, Name: "Nicaragua", Cost: 40, CPS: 0.5, Owned: 0 },
-    { id: 1, Name: "Honduras", Cost: 100, CPS: 3, Owned: 0 },
-    { id: 2, Name: "RepDom", Cost: 800, CPS: 9, Owned: 0 },
-    { id: 3, Name: "Etat-Unis", Cost: 6000, CPS: 20, Owned: 0 },
+    { id: 0, Name: "Nicaragua", Cost: 20, CPS: 0.5, Owned: 0 },
+    { id: 1, Name: "Honduras", Cost: 80, CPS: 3, Owned: 0 },
+    { id: 2, Name: "RepDom", Cost: 600, CPS: 9, Owned: 0 },
+    { id: 3, Name: "Etat-Unis", Cost: 4000, CPS: 20, Owned: 0 },
     { id: 4, Name: "France", Cost: 100000, CPS: 80, Owned: 0 },
     { id: 5, Name: "Cuba", Cost: 250000, CPS: 150, Owned: 0 },
     { id: 6, Name: "Italy", Cost: 550000, CPS: 400, Owned: 0 },
-    { id: 7, Name: "Axel", Cost: 5500000, CPS: 490, Owned: 0 },
+    
 ];
 
 function getGPS() { //Permet de recuperer le gps des minions
