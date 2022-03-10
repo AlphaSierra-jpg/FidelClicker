@@ -22,10 +22,10 @@ const newciaattack = setInterval(function () { newCiaAttack() }, 60000); //Compt
 var minions = [
     { id: 0, Name: "Nicaragua", Cost: 20, CPS: 0.5, Owned: 0 },
     { id: 1, Name: "Honduras", Cost: 80, CPS: 3, Owned: 0 },
-    { id: 2, Name: "RepDom", Cost: 600, CPS: 9, Owned: 0 },
-    { id: 3, Name: "Etat-Unis", Cost: 4000, CPS: 20, Owned: 0 },
-    { id: 4, Name: "France", Cost: 100000, CPS: 80, Owned: 0 },
-    { id: 5, Name: "Cuba", Cost: 250000, CPS: 150, Owned: 0 },
+    { id: 2, Name: "RepDom", Cost: 400, CPS: 9, Owned: 0 },
+    { id: 3, Name: "Etat-Unis", Cost: 2000, CPS: 20, Owned: 0 },
+    { id: 4, Name: "France", Cost: 10000, CPS: 80, Owned: 0 },
+    { id: 5, Name: "Cuba", Cost: 25000, CPS: 150, Owned: 0 },
     { id: 6, Name: "Italy", Cost: 550000, CPS: 400, Owned: 0 },
     
 ];
@@ -253,7 +253,7 @@ function newCiaAttack() {
     if (step2Do == 1) {
         var id = 'idCiaAttack' + idCiaButton;
         var buttonCIA = document.createElement("button")
-        var price = Math.floor(Math.random() * 3000000) + 15000;
+        var price = Math.floor(Math.random() * 600000) + 15000;
         var text = 'Prix de défense: ' + price;
         var buttonOnclickValue = 'validateCiaButton("' + id + '", ' + price + ')';
         var textbutton = document.createTextNode(text);
